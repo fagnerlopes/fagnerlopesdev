@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, MessageCircle, Download } from "lucide-react"
 import { SiLaravel, SiVuedotjs, SiReact, SiPhp, SiTypescript } from "react-icons/si"
 import { Button } from "@/components/ui/button"
 import { TypingAnimation } from "@/components/typing-animation"
+import { VisitorCounter } from "@/components/visitor-counter"
 
 export function Hero() {
   const techStack = [
@@ -58,10 +59,11 @@ export function Hero() {
         </div>
         
         <div className="space-y-5 max-w-3xl">
-          <div className="inline-block">
+          <div className="flex items-center justify-center gap-4 flex-wrap">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
               Desenvolvedor Full Stack
             </span>
+            <VisitorCounter />
           </div>
           
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl bg-linear-to-r from-foreground via-foreground/90 to-foreground/80 bg-clip-text text-transparent">
